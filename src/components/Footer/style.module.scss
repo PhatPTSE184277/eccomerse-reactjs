@@ -1,0 +1,27 @@
+@import '@styles/mixin.module.scss';
+@import '@styles/variable.module.scss';
+
+.container {
+    @include flex_box_custom(center, center, 0px);
+    background-color: $primary_color;
+    padding: 40px 0;
+    height: 392px;
+    width: auto;
+}
+
+.footerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 82px;
+    width: 1250px;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.containerMenu {
+    @include flex_box_custom(center, center, 40px);
+    color: $white_color;
+    font-size: 15px;
+    cursor: pointer;
+}

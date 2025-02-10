@@ -32,7 +32,8 @@ const MyHeader = () => {
                     alt='Logo'
                     style={{
                         width: '153px',
-                        height: '53px'
+                        height: '53px',
+                        cursor: 'pointer'
                     }}
                 />
             </div>

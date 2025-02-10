@@ -1,0 +1,16 @@
+@import '@styles/mixin.module.scss';
+@import '@styles/variable.module.scss';
+
+.container {
+    margin: 65px 0px 15px;
+}
+
+.headline {
+    height: 20px;
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.containerMiddleBox {
+    padding: 0px 20px;
+}
