@@ -9,10 +9,11 @@ import heartIcon from '@icons/svgs/heartIcon.svg';
 import cartIcon from '@icons/svgs/cartIcon.svg';
 
 const MyHeader = () => {
-    const { containerBoxIcon, containerMenu, containerHeader, containerBox } =
+    const { containerBoxIcon, containerMenu, containerHeader, containerBox, container} =
         styles;
     return (
-        <div className={containerHeader}>
+        <div className={container}>
+            <div className={containerHeader}>
             <div className={containerBox}>
                 <div className={containerBoxIcon}>
                     {dataBoxIcon.map((item) => {
@@ -47,6 +48,7 @@ const MyHeader = () => {
                     <img width={21} height={21} src={cartIcon} alt='cartIcon' />
                 </div>
             </div>
+        </div>
         </div>
     );
 };

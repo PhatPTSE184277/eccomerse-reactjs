@@ -1,24 +1,35 @@
 @import '@styles/mixin.module.scss';
 @import '@styles/variable.module.scss';
 
+.container {
+    @include flex_box_custom(center, center, 0px);
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
 .containerHeader {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     height: 82px;
+    width: 1250px;
 }
 
 .containerBox {
     @include flex_box_custom(center, center, 20px);
+    cursor: pointer;
 }
 
 .containerBoxIcon {
     @include flex_box_custom(center, center, 10px);
+    cursor: pointer;
 }
 
 .containerMenu {
-    @include flex_box_custom(center, center, 20px);
-    cursor: pointer;
+    @include flex_box_custom(center, center, 40px);
 }
 
 .boxIcon {
@@ -27,7 +38,13 @@
     background-color: $primary_color;
     height: 26px;
     width: 26px;
+}
+
+.menu {
     cursor: pointer;
+    padding-top: 9px;
+    font-size: 15px;
+    color: $primary_color;
 }
 
 .menu::after {
@@ -39,12 +56,11 @@
 
     transform-origin: right;
     transform: scale(0);
-    transition: transform 300ms, opacity 300ms;
+    transition: transform 300ms, opacity 500ms;
     opacity: 0;
 }
 
 .menu:hover::after {
-    transform-origin: right;
     transform: scale(1);
     opacity: 1;
 }
